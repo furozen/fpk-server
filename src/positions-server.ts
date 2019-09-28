@@ -91,18 +91,27 @@ class Handler {
 
         this.sessionId = m.sessionId;
 
-          this.sendMessage(m);
+        this.sendMessage(m);
 
       }break;
       case "new-data":{
+        await this.collection.insertOne(m.data);
 
+      } break;
 
+      case "search":{
 
-          const kpath = `dish.`;
+        const responseData = await this.collection.find({}).toArray();
 
-          await this.collection.insertOne(m.data);
+        const message:IMessages ={
+          id:'search-result',
+          sessionId:this.sessionId,
+          data:responseData
+        };
 
-        } break
+        this.sendMessage(message);
+
+      } break;
 
 
 

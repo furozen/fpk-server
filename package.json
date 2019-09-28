@@ -1,7 +1,7 @@
 {
-  "name": "lingo2conf-thrift-proxy-server",
+  "name": "fpk-server",
   "version": "0.0.1",
-  "description": "Thrift websocket proxy server",
+  "description": "websocket  server",
   "main": "index.js",
   "author": "Andy Malahovsky",
   "private": true,
