@@ -19,7 +19,7 @@
     "@types/uuid": "^3.4.5",
     "FPKFOOD-models": "https://github.com/furozen/FPKFood-models.git",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "lodash": "^4.17.15",
     "mongodb": "^3.3.2",
     "rxjs": "^6.5.2",
